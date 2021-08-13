@@ -1,0 +1,31 @@
+.plans-screen-plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.plans-screen-plan-disabled button {
+  background-color: gray !important;
+}
+
+.plans-screen-plan-disabled button:hover {
+  cursor: default;
+}
+
+.plans-screen-plan:hover {
+  opacity: 1;
+}
+
+.plans-screen-plan-disabled:hover {
+  opacity: 0.8;
+}
+
+.plans-screen-plan button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: 0;
+  cursor: pointer;
+}

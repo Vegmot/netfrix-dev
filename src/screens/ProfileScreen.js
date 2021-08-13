@@ -5,6 +5,7 @@ import { auth } from '../firebase'
 import Navbar from '../components/Navbar'
 
 import './ProfileScreen.css'
+import PlansScreen from './PlansScreen'
 
 const ProfileScreen = () => {
   const user = useSelector(selectUser)
@@ -26,7 +27,8 @@ const ProfileScreen = () => {
 
             <div className='profile-screen-plans'>
               <h3>Plans</h3>
-              <p>Renewal date: </p>
+
+              <PlansScreen />
 
               <button
                 onClick={() => auth.signOut()}

@@ -10,7 +10,7 @@ const config = {
 }
 
 const fbApp = firebase.initializeApp(config)
-const db = fbApp.firestore()
 
+export const db = fbApp.firestore()
 export const userCollection = db.collection('users')
 export const auth = firebase.auth()
